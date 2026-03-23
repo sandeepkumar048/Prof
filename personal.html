@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandeep Kohar | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Hero Section */
+    header {
+      height: 100vh;
+      background: url("sand.jpg") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      text-align: left;
+      color: white;
+      padding: 10px 20px;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      z-index: 2;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* Section General */
+    section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #203a43;
+    }
+
+    /* About Section */
+    #about {
+      background: white;
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .skill-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(67, 204, 254, 0.914);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(250, 2, 221, 0.919);
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .project-card {
+      background: #1a4655;
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .project-card:hover {
+      background: 
+      #101010;
+      transform: scale(1.05);
+    }
+
+    /* Contact */
+    #contact {
+      text-align: center;
+      background: #05b8f4;
+      color: white;
+      padding: 60px 20px;
+      border-radius: 12px;
+    }
+    #contact p {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f2027;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>Sandeep Kohar</h1>
+    <p class="fas fa-align-right    ">Frontend & Full Stack Developer</p>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a web developer with a passion for creating professional, modern, and user-friendly websites. 
+      My goal is to build digital experiences that are not only functional but also visually appealing.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-card">HTML5 / CSS3</div>
+      <div class="skill-card">JavaScript / ES6+</div>
+      <div class="skill-card">React / Node.js</div>
+      <div class="skill-card">MongoDB / MySQL</div>
+      <div class="skill-card">Git / GitHub</div>
+      <div class="skill-card">Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">🌐 Portfolio Website</div>
+      <div class="project-card">🛒 E-commerce Store</div>
+      <div class="project-card">📊 Dashboard App</div>
+      <div class="project-card">✍️ Blogging Platform</div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 koharsandeep078@email.com</p>
+    <p>💼 LinkedIn | 🐙 GitHub</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sandeep Kohar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
